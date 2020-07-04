@@ -41,7 +41,7 @@ int calcSquareFunction(int x){
 ```
 ###### Optional params
 ``` dart 
-void printSomething(String fullName, int age, {String optional}){
+void printSomething(String fullName, int age, { String optional}){
   print('Full Name: '+ fullName);
   print(age);
   if(optional!=null)
@@ -249,4 +249,3 @@ void main() {
 
 ```
 
-#### Try/ Catch/ Exception
