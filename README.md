@@ -249,3 +249,17 @@ void main() {
 
 ```
 
+## Flutter
+
+### Stateful, Stateless Widget
+
+- #### Stateful widget
+  - Use when care about the state of widget (Ex: checkbox, form)
+  - Have func: setState({})
+  - Rebuild when call setState({})
+  
+- #### Stateless widget
+  - No need to care about the state of widget after display
+  - Do not have func: setState({})
+  - Cannot rebuild itself
+  - Rebuild from outside
