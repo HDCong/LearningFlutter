@@ -263,3 +263,34 @@ void main() {
   - Do not have func: setState({})
   - Cannot rebuild itself
   - Rebuild from outside
+
+### Build function
+For example, my code is: 
+``` dart
+class HomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Widget"),
+      ),
+      body: Center(
+          child: Container(
+            child:Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text('Home page stateless'),
+              ],
+            ) )
+      )
+    );
+  }
+} 
+```
+Widget tree of the above code is
+![image expression](./Picture/03-WidgetTree.png)
+
+- Each widget has its context
+
+- Each BuildContext has the information of the parent BuildContext (ex: BuildContext of Center has the BuildContext Scaffold's information )
+- BuildContext is different from each other
